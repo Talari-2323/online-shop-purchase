@@ -1,0 +1,23 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emmom | Search</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+  <div class="search-bar-container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Emmom..." oninput="showSuggestions(this.value)">
+      <button class="search-icon" onclick="submitSearch()">
+        🔍
+      </button>
+      <ul class="suggestions" id="suggestionsList"></ul>
+    </div>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>
